@@ -49,7 +49,7 @@ Use exactly this structure. Omit a section only if it is genuinely empty.
 # Brain: <feature name>
 
 Slug: <slug> · Branch: <branch> · Updated: <YYYY-MM-DD>
-Status: <one line — what works, what doesn't, where we stopped>
+Status: <one line: what works, what doesn't, where we stopped>
 
 ## Goal
 <2-4 sentences: what this feature is, and what "done" means.>
@@ -82,7 +82,7 @@ aren't written down here.>
 - Not started: <...>
 
 ## Next actions
-1. <the single next concrete thing — specific enough to start on immediately>
+1. <the single next concrete thing, specific enough to start on immediately>
 2. <...>
 
 ## Open questions (blocked on me)

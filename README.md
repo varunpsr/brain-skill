@@ -1,4 +1,4 @@
-# Brain — working memory for Claude Code
+# Brain: working memory for Claude Code
 
 Per-feature working memory that survives `/clear`, auto-compact, and a three-day gap.
 You save the state of a feature to a small markdown file while the session still has
@@ -58,7 +58,7 @@ Add this to `~/.claude/CLAUDE.md` so saving doesn't depend on your memory:
 
 Feature state lives in `.claude/brain/<slug>.md` in the project root. Run `/brain:save`
 after landing a decision, after a failed approach is ruled out, and before any large
-refactor — not only when asked. If context is running low, save before continuing.
+refactor, not only when asked. If context is running low, save before continuing.
 ```
 
 ## Use

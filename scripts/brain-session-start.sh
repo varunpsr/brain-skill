@@ -2,7 +2,7 @@
 # Injects a pointer to the active brain file at session start, resume, clear, and
 # post-compact. Stdout from a SessionStart hook is added to Claude's context.
 #
-# Phrased as factual project information, not as an instruction — text that reads like
+# Phrased as factual project information, not as an instruction: text that reads like
 # an out-of-band system command can trip Claude's prompt-injection defenses.
 set -uo pipefail
 
