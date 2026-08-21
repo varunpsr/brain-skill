@@ -70,6 +70,7 @@ refactor, not only when asked. If context is running low, save before continuing
 |---|---|
 | `/brain:save <slug>` | after a decision lands, after an approach is ruled out, before `/clear` or any large refactor |
 | `/brain:load <slug>` | first thing in a fresh session |
+| `/brain:list` | to see what brain files this project has, their dates and status lines |
 
 Omit the slug and it derives one from the branch name (`feat/rto-reduction` →
 `rto-reduction`).
