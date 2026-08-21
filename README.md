@@ -17,7 +17,8 @@ Four pieces cooperate:
 | PreCompact hook | Snapshots the raw transcript to `.claude/brain/.transcripts/` right before compaction, so even a bad compaction is recoverable. Keeps the last 20 snapshots. Safety net only; the brain file is the real mechanism. |
 
 Config is global (the plugin), data is per-repo: a brain file lives next to the code it
-describes.
+describes. See [examples/brain-file.md](examples/brain-file.md) for what a saved brain
+file actually looks like.
 
 ## Install
 
@@ -32,8 +33,10 @@ To try it from a local clone instead:
 claude --plugin-dir /path/to/brain-skill
 ```
 
-**Requirement:** `jq` (`brew install jq`). Only the PreCompact transcript snapshot needs
-it; without `jq` that hook silently no-ops and everything else still works.
+**Requirements:** none beyond Claude Code itself. The transcript-snapshot hook uses `jq`
+if installed and falls back to `python3` otherwise (present on macOS and virtually every
+Linux). The hooks are bash scripts, so this is a macOS/Linux plugin; on Windows it is
+untested and would need WSL or Git Bash.
 
 **If you previously hand-installed the v1/v2 "brain kit"** (files copied into
 `~/.claude/commands/brain/` and `~/.claude/hooks/`), remove those and their two hook
