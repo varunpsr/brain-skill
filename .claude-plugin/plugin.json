@@ -1,0 +1,9 @@
+{
+  "name": "brain",
+  "description": "Per-feature working memory for Claude Code: /brain:save writes a resumable state file, /brain:load verifies it against the code and re-orients a fresh session.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Varun Rathore"
+  },
+  "license": "MIT"
+}

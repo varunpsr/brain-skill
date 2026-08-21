@@ -1,0 +1,13 @@
+{
+  "name": "brain-marketplace",
+  "owner": {
+    "name": "Varun Rathore"
+  },
+  "plugins": [
+    {
+      "name": "brain",
+      "source": "./",
+      "description": "Per-feature working memory for Claude Code: survive /clear, compaction, and days away from a feature."
+    }
+  ]
+}
